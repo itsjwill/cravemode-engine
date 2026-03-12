@@ -1,0 +1,30 @@
+# API keys (never commit)
+.claude/.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Generated outputs
+outputs/*.png
+outputs/*.jpg
+outputs/*.mp4
+outputs/*.webm
+
+# Client data (has usage/quota info)
+data/clients.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Claude Code local settings
+.claude/settings.local.json
