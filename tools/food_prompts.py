@@ -614,20 +614,22 @@ def build_interact_video_prompt(dish_name="the dish"):
 
 def build_orbit_video_prompt(dish_name="the dish"):
     """
-    Video 3: Cinematic Orbit — camera sweeps around the dish.
+    Video 3: Cinematic Pan — camera pans left and rises from close-up.
     Uses Image 1 (hero) as start frame.
     Works universally for all dish types.
     """
     return (
-        f"Cinematic food video. The camera slowly orbits around {dish_name} in a smooth arc, "
-        f"starting from one side and sweeping to the other. The camera is at a slight elevated angle. "
-        f"As it moves, you see the dish from changing angles — the parallax reveals depth, "
-        f"the toppings shift perspective, the textures catch light differently as the camera passes. "
-        f"The orbit is slow, smooth, and continuous like a professional dolly on a curved track. "
-        f"The dish stays centered while the world rotates around it. "
-        f"Soft bright natural lighting. Clean surface. Shallow depth of field. "
-        f"The background gently blurs and shifts as the camera moves, creating real cinematic depth. "
-        f"NO zoom. NO push-in. The camera MOVES laterally around the food. "
+        f"Cinematic food video. The camera starts close to {dish_name} at a low angle, "
+        f"showing intimate detail of the textures and toppings. "
+        f"The camera then slowly pans left while simultaneously rising upward, "
+        f"gradually revealing more of the dish in one smooth continuous crane motion. "
+        f"The movement is slow, smooth, and cinematic like a professional crane or jib shot. "
+        f"As the camera rises, the perspective shifts from intimate close-up to a wider view. "
+        f"Soft bright natural lighting. Shallow depth of field. "
+        f"The background shifts with real parallax as the camera moves. "
+        f"FRAMING: The dish should dominate the frame throughout. Never reveal the table edge, "
+        f"floor, walls, or surrounding environment. Keep the food as the focus. "
+        f"NO zoom. Real physical camera movement — left pan with upward rise. "
         f"NO hands. NO interaction. NO steam. NO smoke. "
         f"Professional food cinematography. Elegant and appetizing."
     )
