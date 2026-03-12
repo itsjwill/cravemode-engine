@@ -612,25 +612,24 @@ def build_interact_video_prompt(dish_name="the dish"):
     )
 
 
-def build_plating_build_video_prompt(dish_name="the dish"):
+def build_orbit_video_prompt(dish_name="the dish"):
     """
-    Video 3: Plating Build — dish assembled piece by piece.
-    Uses Image 1 (hero) as the FINAL frame the video builds toward.
+    Video 3: Cinematic Orbit — camera sweeps around the dish.
+    Uses Image 1 (hero) as start frame.
     Works universally for all dish types.
     """
     return (
-        f"Overhead camera looking straight down at an empty premium surface. "
-        f"Piece by piece, {dish_name} is assembled in frame — each component placed carefully "
-        f"by gloved hands entering from the edges. First the base, then the main element, "
-        f"then toppings, garnishes, and final touches. Each addition is a satisfying moment. "
-        f"The pacing is quick but not rushed — each element gets a beat to land. "
-        f"By the end, the complete dish fills the frame exactly matching the hero photo. "
-        f"Camera stays LOCKED overhead the entire time. Only the gloved hands and food move. "
-        f"Warm cinematic lighting from the side. Dark moody background. "
-        f"All food textures physically realistic and sharp. "
-        f"No steam, no smoke. "
-        f"HANDS: Any hands touching food MUST wear black food-safe gloves. No bare hands. "
-        f"The final frame is the money shot — the complete dish."
+        f"Cinematic food video. The camera slowly orbits around {dish_name} in a smooth arc, "
+        f"starting from one side and sweeping to the other. The camera is at a slight elevated angle. "
+        f"As it moves, you see the dish from changing angles — the parallax reveals depth, "
+        f"the toppings shift perspective, the textures catch light differently as the camera passes. "
+        f"The orbit is slow, smooth, and continuous like a professional dolly on a curved track. "
+        f"The dish stays centered while the world rotates around it. "
+        f"Soft bright natural lighting. Clean surface. Shallow depth of field. "
+        f"The background gently blurs and shifts as the camera moves, creating real cinematic depth. "
+        f"NO zoom. NO push-in. The camera MOVES laterally around the food. "
+        f"NO hands. NO interaction. NO steam. NO smoke. "
+        f"Professional food cinematography. Elegant and appetizing."
     )
 
 
@@ -647,8 +646,8 @@ def build_cut_reveal_video_prompt(dish_name="the dish"):
 def build_slow_reveal_video_prompt(dish_name="the dish"):
     return build_interact_video_prompt(dish_name)
 
-def build_orbit_video_prompt(dish_name="the dish"):
-    return build_plating_build_video_prompt(dish_name)
+def build_plating_build_video_prompt(dish_name="the dish"):
+    return build_orbit_video_prompt(dish_name)
 
 def build_sizzle_video_prompt(dish_name="the dish"):
     return build_action_video_prompt(dish_name)
